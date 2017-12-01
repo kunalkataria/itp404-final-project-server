@@ -1,0 +1,33 @@
+{
+  "name": "favorite",
+  "plural": "favorites",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "visited": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
